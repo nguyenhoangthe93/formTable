@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <h1>Danh sách học sinh</h1>
+    <!-- table th th td -->
+    <!-- table , tr: table row , th : table header, td: table data-->
+    <!-- gộp cột : colspan = n => xóa đi số lượng cột đằng sau = số cột gộp (n) - 1 -->
+    <!-- gộp hàng : rowspan = n => xóa đi một cột ở vị trí rowspan của n-1 hàng sau đó -->
+    <div>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Họ tên</th>
+            <th>Tuổi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">1</td>
+            <td>Huỳnh</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <!-- <td>2</td> -->
+            <td>Huỳnh</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <!-- <td>3</td> -->
+            <td>Huỳnh</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Huỳnh</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td colspan="5">3</td>
+          </tr>
+          <tr>
+            <td>Tổng</td>
+            <td colspan="2">182</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h1>Login form</h1>
+      <form method="get" name="loginForm" action="">
+        <div>
+          <p>Họ tên</p>
+          <input type="text" name="name" />
+        </div>
+        <div>
+          <p>Mật khẩu</p>
+          <input type="password" name="password" />
+        </div>
+        <div>
+          <section name="genderselect" id="">
+            <option value="male">Name</option>
+            <option value="female">Nữ</option>
+          </section>
+        </div>
+        <div>
+          <p>Sở thích</p>
+          <input type="checkbox" name="hobby" value="1" checked /> Game
+          <input type="checkbox" name="hobby" value="2" /> Music
+          <input type="checkbox" name="hobby" value="3" /> Gym
+
+          <section name="hobby" id="" multiple>
+            <option value="game1">game1</option>
+            <option value="gym1">gym1</option>
+            <option value="music1">music1</option>
+          </section>
+        </div>
+
+        <div>
+          <p>Giới tính</p>
+          <input type="radio" name="gender" value="male" checked /> Name
+          <input type="radio" name="gender" value="male" /> Nữ
+        </div>
+
+        <div>
+          <p>Thông tin bổ sung</p>
+          <input type="" name="description" value="male" checked /> Name
+        </div>
+        <div>
+          <input type="submit" name="submit" />
+          <input type="reset" name="reset" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
